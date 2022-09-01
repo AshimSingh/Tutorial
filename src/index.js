@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Display from './show/hide';
 function App(){
     const [text,setText]=useState()
     const [isError,setIsError] =useState(false)
@@ -14,10 +15,11 @@ function App(){
 
 
             {/* Ternnary operator */}
-            <div class="w-50  d-flex  flex-column" style={{margin:"20%"}}>
+            {/* <div class="w-50  d-flex  flex-column" style={{margin:"20%"}}>
             <button type="button" class="btn btn-info" onClick={()=>{setIsError(!isError)}}>{isError ? "Fix Error":"Find Error"}</button>
             {isError?<h1>Error...</h1>:<h1>Every Thing  all okay</h1>}
-            </div>
+            </div> */}
+            <Display></Display>
         </>
     )
 }
