@@ -11,6 +11,8 @@ const MyForm=()=>{
             setPerson((person)=>{
                 return ([...person,people])
             })
+            setNaam('')
+            setMail('')
         }
         // console.log("hello Art")
         else{
