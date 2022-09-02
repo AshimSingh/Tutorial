@@ -3,9 +3,10 @@ import ReactDom from 'react-dom'
 import {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Display from './show/hide';
+import MyForm from './show/form';
 function App(){
-    const [text,setText]=useState()
-    const [isError,setIsError] =useState(false)
+    // const [text,setText]=useState()
+    // const [isError,setIsError] =useState(false)
     return(
         <>
             {/* And Or operator
@@ -19,7 +20,8 @@ function App(){
             <button type="button" class="btn btn-info" onClick={()=>{setIsError(!isError)}}>{isError ? "Fix Error":"Find Error"}</button>
             {isError?<h1>Error...</h1>:<h1>Every Thing  all okay</h1>}
             </div> */}
-            <Display></Display>
+            {/* <Display></Display> */}
+            <MyForm></MyForm>
         </>
     )
 }
