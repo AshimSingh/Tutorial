@@ -4,6 +4,7 @@ import {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Display from './show/hide';
 import MyForm from './show/form';
+import Ref from './show/useref';
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -21,7 +22,8 @@ function App(){
             {isError?<h1>Error...</h1>:<h1>Every Thing  all okay</h1>}
             </div> */}
             {/* <Display></Display> */}
-            <MyForm></MyForm>
+            {/* <MyForm></MyForm> */}
+            <Ref></Ref>
         </>
     )
 }

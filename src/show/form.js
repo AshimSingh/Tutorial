@@ -17,7 +17,7 @@ const MyForm=()=>{
             setPerson(
                 [...person,newPerson]
             )
-            setPeople({ firstName:'',email:"",age:'' })
+            setPeople({ firstName:'',email:'',age:'' })
         }
     }
     // const handelForm=(e)=>{
