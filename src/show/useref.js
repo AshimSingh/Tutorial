@@ -26,7 +26,6 @@ const Ref=()=>{
                     </label>   
                     <button onClick={handelSubmit} >Submit</button>
                 </div>
-               
             </form>
         </>
     )

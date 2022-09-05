@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import {useState} from 'react'
+// import {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Display from './show/hide';
-import MyForm from './show/form';
-import Ref from './show/useref';
+// import Display from './show/hide';
+// import MyForm from './show/form';
+// import Ref from './show/useref';
+import Redu from './show/useReducer';
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -23,7 +24,8 @@ function App(){
             </div> */}
             {/* <Display></Display> */}
             {/* <MyForm></MyForm> */}
-            <Ref></Ref>
+            {/* <Ref></Ref> */}
+            <Redu></Redu>
         </>
     )
 }
