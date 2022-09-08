@@ -1,8 +1,8 @@
 import React from 'react'
-const Model = ()=>{
+const Model = ({modelContent})=>{
     return(
         <>
-            <h3>Your String is Empty...</h3>
+            <h3>{modelContent}</h3>
         </>
     )
 }

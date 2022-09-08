@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Display from './show/hide';
 // import MyForm from './show/form';
 // import Ref from './show/useref';
-import Redu from './show/useReducer';
+import Reduc from './show/Reducer';
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -25,7 +25,7 @@ function App(){
             {/* <Display></Display> */}
             {/* <MyForm></MyForm> */}
             {/* <Ref></Ref> */}
-            <Redu></Redu>
+            <Reduc></Reduc>
         </>
     )
 }
