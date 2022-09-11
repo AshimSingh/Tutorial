@@ -1,32 +1,33 @@
 import React from "react";
 import { useState,useReducer } from "react";
 import Model from "./model";
-const reducer=(state,action)=>{
-    if(action.type === "TESTING"){
-        const newPeople =[...state.people,action.payload]
-        return{
-            ...state,
-            people:newPeople,
-    isModel:true,
-    modelContent:"Item Added",
-        }
+import {reducer} from './reduce'
+// const reducer=(state,action)=>{
+//     if(action.type === "TESTING"){
+//         const newPeople =[...state.people,action.payload]
+//         return{
+//             ...state,
+//             people:newPeople,
+//     isModel:true,
+//     modelContent:"Item Added",
+//         }
         
-    }
-    else if(action.type==="noVal"){
-        return {...state,isModel:false}   
-    }
-    else if(action.type==="closeModel"){
-        return{...state,isModel:false}
-    }
-    else if(action.type==='remove'){
-        const newP= state.people.filter((p)=>(p.id!==action.payload))
-        return{...state,people:newP}
-    }
-    else{
-        return state
-    }
+//     }
+//     if(action.type==="noVal"){
+//         return {...state,isModel:false}   
+//     }
+//     if(action.type==="closeModel"){
+//         return{...state,isModel:false}
+//     }
+//     if(action.type==='remove'){
+//         const newP= state.people.filter((p)=>(p.id!==action.payload))
+//         return{...state,people:newP}
+//     }
+//     else{
+//         return state
+//     }
     
-}
+// }
 const initialState ={
         people:[],
         isModel:false,
