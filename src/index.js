@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Ref from './show/useref';
 // import Reduc from './show/Reducer';
 // import Prop from './show/propDrilling';
+import Prop from './show/prop'
 import Hook from './show/customhooks'
 function App(){
     // const [text,setText]=useState()
@@ -29,7 +30,8 @@ function App(){
             {/* <Ref></Ref> */}
             {/* <Reduc></Reduc> */}
             {/* <Prop></Prop> */}
-            <Hook></Hook>
+            {/* <Hook></Hook> */}
+            <Prop></Prop>
         </>
     )
 }
