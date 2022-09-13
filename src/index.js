@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import MyForm from './show/form';
 // import Ref from './show/useref';
 // import Reduc from './show/Reducer';
-import Prop from './show/propDrilling';
+// import Prop from './show/propDrilling';
+import Hook from './show/customhooks'
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -27,7 +28,8 @@ function App(){
             {/* <MyForm></MyForm> */}
             {/* <Ref></Ref> */}
             {/* <Reduc></Reduc> */}
-            <Prop></Prop>
+            {/* <Prop></Prop> */}
+            <Hook></Hook>
         </>
     )
 }
