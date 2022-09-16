@@ -32,6 +32,7 @@ const SinglePerson=({id,firstName,remove})=>{
     return(
         <div className='d-flex' key={id}>
             <Link className='navItem' to={`/person/${id}`}><h4>{firstName}</h4></Link>
+            {/* <h4>{firstName}</h4> */}
             <button className='m-2 mt-0 btn btn-info' onClick={()=>remove(id)}>Remove</button>
         </div>
         

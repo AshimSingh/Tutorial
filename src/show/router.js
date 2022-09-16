@@ -2,7 +2,9 @@ import React from 'react'
 import Prop from './prop'
 import Props from './propDrilling'
 import Homepage from './homepage'
-import {BrowserRouter as Router,Route,Routes,Link} from 'react-router-dom'
+import {useState,useEffect} from 'react'
+import {BrowserRouter as Router,Route,Routes,Link, useParams, Form} from 'react-router-dom'
+import {data} from './data' 
 const ReactRouteras=()=>{
    return(
     <>
@@ -70,10 +72,34 @@ function Err(){
     )
 }
 function Person(){
+    const[dat,setdata]=useState(data)
+    const [name,setName]=useState([])
+    const {id}=useParams()
+    useEffect(()=>{
+        // const obj =dat.find((pep)=>pep.id==id)
+        const obj = dat.filter((pep)=>pep.id==id)
+        setName(
+            obj
+        )
+    },[])
+    
     return(
+        
         <>
             <div className='box'>
-                <h1>Person</h1>
+                   {/* <h1>{name.firstName}</h1>
+                   <h3>ID number: {name.id}</h3> */}
+                   {
+                        name.map((m)=>{
+                            return(
+                                <>
+                                    <h1>{m.firstName}</h1>
+                                    <h3>ID number: {m.id}</h3>
+                                </>
+                            )
+                        })
+                   }
+                   
             </div>
         </>
     )
