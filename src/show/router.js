@@ -37,6 +37,7 @@ const ReactRouteras=()=>{
             <Route exact path="/" element={<Homepage/>}/>
             <Route path="/prop" element={<Prop></Prop>}/>
             <Route path="/props" element={<Props/>}/>
+            <Route path='/person/:id' element={<Person></Person>}/>
             <Route path='*' element={<Err></Err>}></Route>
         </Routes>
     </Router>
@@ -64,6 +65,15 @@ function Err(){
             <div className='box'>
                 <h1>Err... Page Not found!!!</h1>
                 <Link to="/"><button type="button" class="btn btn-info mt-3">Go Back</button></Link>
+            </div>
+        </>
+    )
+}
+function Person(){
+    return(
+        <>
+            <div className='box'>
+                <h1>Person</h1>
             </div>
         </>
     )

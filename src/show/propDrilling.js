@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {data} from "./data"
+import {Link } from 'react-router-dom';
 const Props=()=>{
     const [name,setName]=useState(data)
     const removePeople=(id)=>{
@@ -30,7 +31,7 @@ const List=({people,remove})=>{
 const SinglePerson=({id,firstName,remove})=>{
     return(
         <div className='d-flex' key={id}>
-            <h4>{firstName}</h4>
+            <Link className='navItem' to={`/person/${id}`}><h4>{firstName}</h4></Link>
             <button className='m-2 mt-0 btn btn-info' onClick={()=>remove(id)}>Remove</button>
         </div>
         
