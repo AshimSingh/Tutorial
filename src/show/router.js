@@ -3,7 +3,7 @@ import Prop from './prop'
 import Props from './propDrilling'
 import Homepage from './homepage'
 import {useState,useEffect} from 'react'
-import {BrowserRouter as Router,Route,Routes,Link, useParams, Form} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Routes,Link, useParams} from 'react-router-dom'
 import {data} from './data' 
 const ReactRouteras=()=>{
    return(
@@ -72,16 +72,17 @@ function Err(){
     )
 }
 function Person(){
-    const[dat,setdata]=useState(data)
+    // const[dat,setdata]=useState(data)
     const [name,setName]=useState([])
     const {id}=useParams()
     useEffect(()=>{
         // const obj =dat.find((pep)=>pep.id==id)
-        const obj = dat.filter((pep)=>pep.id==id)
+        // const obj = dat.filter((pep)=>pep.id===id)
+        const obj = data.filter((pep)=>pep.id===id)
         setName(
             obj
         )
-    },[])
+    },[id])
     
     return(
         
