@@ -37,7 +37,7 @@ const ReactRouteras=()=>{
             <Route exact path="/" element={<Homepage/>}/>
             <Route path="/prop" element={<Prop></Prop>}/>
             <Route path="/props" element={<Props/>}/>
-            {/* <Route path='*' element={<Err></Err>}></Route> */}
+            <Route path='*' element={<Err></Err>}></Route>
         </Routes>
     </Router>
     </>
@@ -58,14 +58,14 @@ const ReactRouteras=()=>{
     // </Router>
     
 }
-// function Err(){
-//     return(
-//         <>
-//             <div className='box'>
-//                 <h1>Err... Page Not found!!!</h1>
-//                 <Link to="/"><button type="button" class="btn btn-info mt-3">Go Back</button></Link>
-//             </div>
-//         </>
-//     )
-// }
+function Err(){
+    return(
+        <>
+            <div className='box'>
+                <h1>Err... Page Not found!!!</h1>
+                <Link to="/"><button type="button" class="btn btn-info mt-3">Go Back</button></Link>
+            </div>
+        </>
+    )
+}
 export default ReactRouteras
