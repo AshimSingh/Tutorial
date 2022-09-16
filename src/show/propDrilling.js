@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {data} from "./data"
-const Prop=()=>{
+const Props=()=>{
     const [name,setName]=useState(data)
     const removePeople=(id)=>{
         const newPep = name.filter((p)=>p.id!==id)
@@ -36,4 +36,4 @@ const SinglePerson=({id,firstName,remove})=>{
         
     )
 }
-export default Prop
+export default Props

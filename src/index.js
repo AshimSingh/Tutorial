@@ -1,14 +1,17 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 // import {useState} from 'react'
+import './show/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Display from './show/hide';
 // import MyForm from './show/form';
 // import Ref from './show/useref';
 // import Reduc from './show/Reducer';
 // import Prop from './show/propDrilling';
-import Prop from './show/prop'
-import Hook from './show/customhooks'
+// import Prop from './show/prop'
+// import Homepage from './show/homepage';
+// import Hook from './show/customhooks'
+import ReactRouteras from './show/router';
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -31,7 +34,9 @@ function App(){
             {/* <Reduc></Reduc> */}
             {/* <Prop></Prop> */}
             {/* <Hook></Hook> */}
-            <Prop></Prop>
+            {/* <Prop></Prop> */}
+            {/* <Homepage/> */}
+            <ReactRouteras/>
         </>
     )
 }
