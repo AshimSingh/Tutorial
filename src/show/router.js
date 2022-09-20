@@ -5,6 +5,7 @@ import Homepage from './homepage'
 import {useState,useEffect} from 'react'
 import {BrowserRouter as Router,Route,Routes,Link, useParams} from 'react-router-dom'
 import {data} from './data' 
+import { Button } from 'bootstrap'
 const ReactRouteras=()=>{
    return(
     <>
@@ -96,6 +97,7 @@ function Person(){
                                 <>
                                     <h1>{m.firstName}</h1>
                                     <h3>ID number: {m.id}</h3>
+                                    <Link to='/propsn'><button className='m-2 mt-0 btn btn-info'>Go back to People</button></Link>
                                 </>
                             )
                         })

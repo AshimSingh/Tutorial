@@ -11,7 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Prop from './show/prop'
 // import Homepage from './show/homepage';
 // import Hook from './show/customhooks'
-import ReactRouteras from './show/router';
+// import ReactRouteras from './show/router';
+import Memo from './react_memo';
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -36,7 +37,8 @@ function App(){
             {/* <Hook></Hook> */}
             {/* <Prop></Prop> */}
             {/* <Homepage/> */}
-            <ReactRouteras/>
+            {/* <ReactRouteras/> */}
+            <Memo></Memo>
         </>
     )
 }
