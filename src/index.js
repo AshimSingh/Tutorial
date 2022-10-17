@@ -12,7 +12,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Homepage from './show/homepage';
 // import Hook from './show/customhooks'
 // import ReactRouteras from './show/router';
-import Memo from './react_memo';
+// 
+import Restapi from './restap';
 function App(){
     // const [text,setText]=useState()
     // const [isError,setIsError] =useState(false)
@@ -38,7 +39,8 @@ function App(){
             {/* <Prop></Prop> */}
             {/* <Homepage/> */}
             {/* <ReactRouteras/> */}
-            <Memo></Memo>
+            {/* <Memo></Memo> */}
+            <Restapi></Restapi>
         </>
     )
 }
